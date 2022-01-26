@@ -4,14 +4,20 @@ body{
     padding: 0;
 }
 
+
 /* ********** Button Style*********** */
+.btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+
 .icon-button{
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
     background-color: transparent;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border-radius: 50%;
     background-position: center;
     transition: background 0.8s;
@@ -31,6 +37,7 @@ body{
     background-size: 100%;
     transition: background 0s;
 }
+
 
 /* ********* Header Style ********* */
 .header{
@@ -148,7 +155,6 @@ body{
 .close-drawer{
     position: fixed;
     top: 0;
-    /* right: 300px; */
     width: 100vw;
     height: 100vh;
     background: rgba(0,0,0,0);
@@ -231,6 +237,5 @@ body{
     #drawer-toggle:checked ~ #drawer { 
         width: 100%; 
     }  
-    
-        
+         
 }
