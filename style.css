@@ -1,3 +1,22 @@
+:root{
+    /* Color variables */
+    --primary-color: #5EEAD4;
+    --secondary-color: black;
+    --secondary-color-shadow: rgb(92, 92, 92);
+    --secondary-color-opaque: rgba(92, 92, 92, 0.3);
+    --ternary-color: white;
+    --ternary-color-shadow: rgb(212, 212, 212);
+    --ternary-color-opaque: rgba(212, 212, 212, 0.3);
+
+    /* Text variables */
+    --primary-font: 'Work Sans', sans-serif;
+    --secondary-font: 'Poppins', sans-serif;
+    /* font-family: 'Comfortaa', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Poppins', sans-serif; */
+}
+
 body{
     display: block;
     margin: 0;
@@ -6,6 +25,21 @@ body{
 
 
 /* ********** Button Style*********** */
+.btn{
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--ternary-color-shadow) radial-gradient(circle, transparent 1%, var(--ternary-color-shadow) 1%) center/15000%;
+} 
+
+.btn:active {
+    background-color: var(--ternary-color-shadow);
+    background-size: 100%;
+    transition: background 0s;
+}
+
 .btn:focus{
     outline: none;
     box-shadow: none;
@@ -29,11 +63,11 @@ body{
 }
 
 .icon-button:hover {
-    background: transparent radial-gradient(circle, rgba(0, 0, 0, 0.062) 1%, rgba(245, 245, 245, 0.151) 1%) center/15000%;
+    background: transparent radial-gradient(circle, var(--secondary-color-opaque) 1%, var(--ternary-color-opaque) 1%) center/15000%;
 }
 
 .icon-button:active {
-    background-color: rgba(209, 209, 209, 0);
+    background-color: transparent;
     background-size: 100%;
     transition: background 0s;
 }
@@ -48,7 +82,7 @@ body{
     width: 100%;
     min-height: max-content;
     height: 4rem;
-    background-color: rgb(94 234 212);
+    background-color: var(--primary-color);
     z-index: 101;
 }
 
@@ -63,11 +97,24 @@ body{
     display: flex;
     justify-content: start;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-family: 'Comfortaa', cursive; 
+    font-size: 2rem;
+    font-weight: 900;
     margin: 0;
     width: 100%;
+    text-shadow: 0px 4px 3px var(--ternary-color-opaque), 0px 8px 13px var(--ternary-color-opaque), 0px 18px 23px var(--ternary-color-opaque);       
+}
+
+.header-title a{
+    list-style: none;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.header-title img{
+    z-index: 103;
+    height: 5rem;
+    width: 5rem;
 }
 
 .header-action-icons{
@@ -79,7 +126,7 @@ body{
 }
 
 .header-icon{
-    background-color: rgb(94 234 212);
+    background-color: var(--primary-color);
     margin: 0 0.5rem 0 0.5rem;
 }
 
@@ -88,6 +135,7 @@ body{
 /* ******** Drawer Style ********* */
 .drawer-header{
     margin: 8px 0 8px 0;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .drawer-title{
@@ -101,15 +149,26 @@ body{
     line-height: 2rem;
 }
 
+.drawer-items{
+    display: flex;
+    flex-direction: column;
+}
+
+.drawer-items .active{
+    background-color: var(--primary-color);
+    color: var(--ternary-color);
+    font-weight: 600;
+}
+
 .drawer-button{
     width: 100%;
     border: none;
-    color: rgb(75, 75, 75);
+    color: var(--secondary-color-shadow);
     border-radius: 0.5rem;
     margin: 0.25rem 0 0.25rem 0;
     padding: 0.5rem;
     font-size: 1rem;
-    background-color: white;
+    background-color: var(--ternary-color);
 }
 
 .drawer-button i{
@@ -122,16 +181,11 @@ body{
     margin-left: 2rem;
 }
 
-.drawer-button:hover{
-    background-color: rgb(243, 243, 243);
-}
-
 .drawer-button:focus{
-    background-color: rgb(94 234 212);
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--ternary-color-shadow);
     font-weight: 600;
 }
-
 
 *{ 
     -webkit-box-sizing: border-box; 
@@ -157,8 +211,7 @@ body{
     top: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0,0,0,0);
-    cursor: url(http://theorthodoxworks.com/demo/images/cross.svg),auto;
+    background: var(--secondary-color-opaque);
     -webkit-transition-property: all;
     transition-property: all;
     -webkit-transition-duration: .3s;
@@ -177,7 +230,7 @@ body{
 }
         
 #drawer { 
-    position: fixed; 
+    position: absolute; 
     top: 4rem; 
     height: 100vh; 
     overflow-y: scroll; 
@@ -186,9 +239,9 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     width: 15rem;
     left: -15rem;
-    color: rgb(75, 75, 75);
-    background-color: white;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    color: var(--secondary-color-shadow);
+    background-color: var(--ternary-color);
+    box-shadow: 0 1px 3px var(--secondary-color-opaque), 0 1px 2px var(--secondary-color-opaque);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     z-index: 100;
 }
@@ -201,6 +254,7 @@ body{
     display: block;
     width: 100%;
     height: 100%; 
+    font-family: 'Poppins', sans-serif;
     overflow-x:hidden; 
     overflow-y:scroll; 
     -webkit-overflow-scrolling: touch; 
@@ -217,11 +271,59 @@ body{
 
 .navlinkContent{
   display: none;
-  margin: 6px;
+  margin: 1rem;
 }
 
 #page-content .active{
-    display: block;
+    display: flex;
+}
+
+.landing-page{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    margin: 3rem;
+    padding: 1rem;
+}
+
+.landing-page h1{
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: 4rem;
+}
+
+.landing-page-btn{
+    padding: 1.5rem;
+    margin: 1rem;
+    width: 12rem;
+    border: none;
+    border-radius: 4rem;
+    background-color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.getStarted-btn{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 3px solid var(--primary-color);
+}
+
+.getStarted-btn:hover{
+    box-shadow: 0 0 3rem 3rem var(--ternary-color) inset;
+}
+
+.github-btn{
+    background-color: var(--secondary-color);
+    color: var(--ternary-color);
+}
+
+.landing-page-btn:focus{
+    outline: none;
+    box-shadow: none;
 }
 
     
@@ -237,5 +339,17 @@ body{
     #drawer-toggle:checked ~ #drawer { 
         width: 100%; 
     }  
-         
+        
+    .landing-page{
+        height: 80vh;
+        margin: 1rem;
+    }
+
+    .landing-page-btn-container{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
 }
