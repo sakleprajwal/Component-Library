@@ -259,7 +259,11 @@ body{
     overflow-y:scroll; 
     -webkit-overflow-scrolling: touch; 
 }
-    
+
+#page-content .active{
+    display: flex;
+}
+
 #drawer-toggle:checked ~ #drawer { 
     left: 0px; 
 } 
@@ -272,10 +276,6 @@ body{
 .navlinkContent{
   display: none;
   margin: 1rem;
-}
-
-#page-content .active{
-    display: flex;
 }
 
 .landing-page{
@@ -345,11 +345,21 @@ body{
         margin: 1rem;
     }
 
+    .landing-page h1{
+        text-align: center;
+        font-family: var(--secondary-font);
+        font-size: 2.5rem;
+    }
+
     .landing-page-btn-container{
         display: flex;
         flex-direction: column;
-        align-content: center;
-        justify-content: center;
+
+    }
+
+    .landing-page-btn{
+        padding: 1rem;
+        margin: 0.5rem;
     }
 
 }
