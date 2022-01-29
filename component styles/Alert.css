@@ -1,0 +1,49 @@
+.alert-container{
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 40rem; 
+}
+
+.alert-container h1,h3{
+    margin-top: 2rem;
+}
+
+.alert-container p{
+    margin: 1rem 0 1rem 0;
+}
+
+.alert {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--ternary-color);
+    margin-top: 1rem;
+}
+
+.green-alert{
+    background-color: rgb(22 163 74);
+}
+
+.red-alert{
+    background-color: rgb(220 38 38);
+}
+
+.amber-alert{
+    background-color: rgb(217 119 6);
+}
+
+.closebtn {
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: var(--ternary-color);
+    cursor: pointer;
+}
+
+.closebtn:hover,.closebtn:focus {
+    color: var(--secondary-color);
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .5;
+}

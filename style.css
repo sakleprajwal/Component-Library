@@ -1,5 +1,6 @@
 @import "./component\ styles/Avatar.css";
 @import "./component\ styles/Badge.css";
+@import "./component\ styles/Alert.css";
 
 :root{
     /* Color variables */
