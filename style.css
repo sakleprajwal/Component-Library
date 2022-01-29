@@ -1,3 +1,6 @@
+@import "./component\ styles/Avatar.css";
+@import "./component\ styles/Badge.css";
+
 :root{
     /* Color variables */
     --primary-color: #5EEAD4;
@@ -25,21 +28,6 @@ body{
 
 
 /* ********** Button Style*********** */
-.btn{
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background: var(--ternary-color-shadow) radial-gradient(circle, transparent 1%, var(--ternary-color-shadow) 1%) center/15000%;
-} 
-
-.btn:active {
-    background-color: var(--ternary-color-shadow);
-    background-size: 100%;
-    transition: background 0s;
-}
-
 .btn:focus{
     outline: none;
     box-shadow: none;
@@ -187,6 +175,16 @@ body{
     font-weight: 600;
 }
 
+.drawer-button:hover {
+    background: var(--ternary-color-shadow) radial-gradient(circle, transparent 1%, var(--ternary-color-shadow) 1%) center/15000%;
+} 
+
+.drawer-button:active {
+    background-color: var(--ternary-color-shadow);
+    background-size: 100%;
+    transition: background 0s;
+}
+
 *{ 
     -webkit-box-sizing: border-box; 
     -moz-box-sizing: border-box; 
@@ -230,7 +228,7 @@ body{
 }
         
 #drawer { 
-    position: absolute; 
+    position: fixed; 
     top: 4rem; 
     height: 100vh; 
     overflow-y: scroll; 
@@ -254,7 +252,7 @@ body{
     display: block;
     width: 100%;
     height: 100%; 
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--secondary-font);
     overflow-x:hidden; 
     overflow-y:scroll; 
     -webkit-overflow-scrolling: touch; 
@@ -262,6 +260,12 @@ body{
 
 #page-content .active{
     display: flex;
+}
+
+.page-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 #drawer-toggle:checked ~ #drawer { 
@@ -326,6 +330,11 @@ body{
     box-shadow: none;
 }
 
+iframe{
+    width: 42rem;
+    height: max-content;
+    margin: 1rem 0 1rem 0;
+}
     
 /* ******* Breakpoint for Responsive Style ******* */ 
 @media all and (max-width: 560px) { 
@@ -360,6 +369,20 @@ body{
     .landing-page-btn{
         padding: 1rem;
         margin: 0.5rem;
+    }
+
+    .avatar-container{
+        width: 100%;
+    }
+
+    .badge-container{
+        width: 100%;
+    }
+
+    iframe{
+        width: 26rem;
+        height: max-content;
+        margin: 1rem 0 1rem 0;
     }
 
 }
