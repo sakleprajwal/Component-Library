@@ -1,0 +1,93 @@
+.badge-container{
+    display: flex;
+    width: 50%;
+    height: max-content;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.badge-container h1,h3{
+    margin-top: 2rem;
+    font-family: var(--primary-font);
+}
+
+.badge-container p{
+    font-family: var(--secondary-font);
+    margin: 1rem 0 1rem 0;
+}
+
+.badge-container .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.badge{
+    background-color:var(--secondary-color);
+    color:var(--ternary-color);
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    position: absolute;
+    min-width: 1.2rem;
+    min-height: 1.2rem;
+}
+
+.text-badge{
+    top: -0.5rem;
+    right: -2rem;
+    padding-left:8px;
+    padding-right:8px;
+}
+
+.btn-badge{
+    top: 0;
+    right: 0;
+    padding-left:8px;
+    padding-right:8px;
+}
+
+.avatar-badge{
+    right: 1rem;
+    bottom: 1.5rem;
+    border: 3px solid var(--ternary-color);
+}
+
+.icon-badge{
+    right: 8px;
+    top: 8px;
+}
+
+.badge-btn{
+    width: max-content;
+    border: none;
+    color: var(--ternary-color);
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: var(--secondary-color);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.badge-content{
+    display: block;
+    position: relative;
+    height: max-content;
+    width: max-content;
+}
+
+.badge-red .badge{
+    background-color: rgb(220 38 38);
+}
+
+.badge-green .badge{
+    background-color: rgb(22 163 74);
+}
+
+.badge-left{
+    right: auto;
+    left: -2rem;
+}
