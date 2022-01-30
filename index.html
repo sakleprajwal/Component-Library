@@ -38,7 +38,7 @@
         <div class="drawer-items">
             <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Avatar')"><i class="fas fa-id-card"></i><span>Avatar</span></label>
             <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Badge')"><i class="fas fa-star"></i><span>Badge</span></label>
-            <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Nav3')"><i class="fas fa-paper-plane"></i><span>Nav3</span></label>
+            <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Alert')"><i class="fas fa-paper-plane"></i><span>Alert</span></label>
             <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Nav4')"><i class="fas fa-envelope"></i><span>Nav4</span></label>
         </div>
     </div>
@@ -85,11 +85,11 @@
                     <h3>Avatar with badge</h3>
                     <div class="flex-container">
                         <div class="badge-content badge-green">
-                            <img class="avatar avatar-lg" src="http://placeimg.com/80/80/animals">
+                            <img class="avatar avatar-lg" src="https://placeimg.com/80/80/animals">
                             <span class="badge avatar-badge"></span>
                         </div>
                         <div class="badge-content badge-green">
-                            <img class="avatar avatar-md" src="http://placeimg.com/80/80/tech">
+                            <img class="avatar avatar-md" src="https://placeimg.com/80/80/tech">
                             <span class="badge avatar-badge"></span>
                         </div>
                     </div>
@@ -147,9 +147,38 @@
                 </div>
             </div>
         </div>
-        <div id="Nav3" class="navlinkContent">
-            <h3>Nav3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid facilis tempora deleniti praesentium! Recusandae sed maiores praesentium iure nam quaerat quas adipisci, soluta voluptatem impedit aut accusamus unde, quo veritatis deleniti ducimus quibusdam. Laboriosam optio nam tenetur quasi unde id suscipit ipsa! Minima obcaecati earum voluptates nulla omnis enim mollitia ducimus repellendus hic exercitationem ea laboriosam, ullam dolorem ab distinctio officia dolores officiis ipsa magnam, eius veritatis tempore nam. Eligendi aperiam exercitationem nihil veritatis aspernatur dolorem corrupti eos veniam, iure qui, commodi modi sint, sunt quam quas esse fugiat voluptate. Nulla, maiores dolores. Asperiores voluptas ipsum quia enim exercitationem obcaecati?</p>
+        <div id="Alert" class="navlinkContent">
+            <div class="page-container">
+                <div class="avatar-container">
+                    <h1>Alert</h1>
+                    <p>An alert (also known as browser push notifications) are actionable messages sent to a visitor's device from a website via a browser.</p>
+                    <h3>Standard alerts</h3>
+                    <div>
+                        <div class="alert">
+                            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                            This is standard alert box with more text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus assumenda repellat atque omnis dignissimos id! Repudiandae ipsam voluptatibus non at!
+                        </div>
+                        <div class="alert green-alert">
+                            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                            This is success alert box.
+                        </div>
+                        <div class="alert red-alert">
+                            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                            This is danger alert box.
+                        </div>
+                        <div class="alert amber-alert">
+                            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                            This is warning alert box.
+                        </div>
+                    </div>
+                    <p>The alert component has 4 different scenarios/colors, i.e. standard (black), success (green), danger (red) and warning (amber). The alert will be vanished when close button is clicked.</p>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=css&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522closebtn%2522%2520onclick%253D%2522this.parentElement.style.display%253D%27none%27%253B%2522%253E%2526times%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520This%2520is%2520standard%2520alert%2520box.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520green-alert%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522closebtn%2522%2520onclick%253D%2522this.parentElement.style.display%253D%27none%27%253B%2522%253E%2526times%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520This%2520is%2520success%2520alert%2520box.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520red-alert%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522closebtn%2522%2520onclick%253D%2522this.parentElement.style.display%253D%27none%27%253B%2522%253E%2526times%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520This%2520is%2520danger%2520alert%2520box.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520amber-alert%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522closebtn%2522%2520onclick%253D%2522this.parentElement.style.display%253D%27none%27%253B%2522%253E%2526times%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520This%2520is%2520warning%2520alert%2520box.%250A%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                        style="border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
         </div>
         <div id="Nav4" class="navlinkContent">
             <h3>Nav4</h3>
