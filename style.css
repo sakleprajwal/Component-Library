@@ -1,6 +1,7 @@
 @import "./component\ styles/Avatar.css";
 @import "./component\ styles/Badge.css";
 @import "./component\ styles/Alert.css";
+@import "./component\ styles/Card.css";
 
 :root{
     /* Color variables */
@@ -386,6 +387,14 @@ iframe{
     }
 
     .badge-container{
+        width: 100%;
+    }
+
+    .alert-container{
+        width: 100%;
+    }
+
+    .card-container{
         width: 100%;
     }
 

@@ -39,7 +39,7 @@
             <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Avatar')"><i class="fas fa-id-card"></i><span>Avatar</span></label>
             <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Badge')"><i class="fas fa-star"></i><span>Badge</span></label>
             <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Alert')"><i class="fas fa-paper-plane"></i><span>Alert</span></label>
-            <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Nav4')"><i class="fas fa-envelope"></i><span>Nav4</span></label>
+            <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Card')"><i class="fas fa-envelope"></i><span>Card</span></label>
         </div>
     </div>
     <div id="page-content">
@@ -180,9 +180,189 @@
                 </div>
             </div>
         </div>
-        <div id="Nav4" class="navlinkContent">
-            <h3>Nav4</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid facilis tempora deleniti praesentium! Recusandae sed maiores praesentium iure nam quaerat quas adipisci, soluta voluptatem impedit aut accusamus unde, quo veritatis deleniti ducimus quibusdam. Laboriosam optio nam tenetur quasi unde id suscipit ipsa! Minima obcaecati earum voluptates nulla omnis enim mollitia ducimus repellendus hic exercitationem ea laboriosam, ullam dolorem ab distinctio officia dolores officiis ipsa magnam, eius veritatis tempore nam. Eligendi aperiam exercitationem nihil veritatis aspernatur dolorem corrupti eos veniam, iure qui, commodi modi sint, sunt quam quas esse fugiat voluptate. Nulla, maiores dolores. Asperiores voluptas ipsum quia enim exercitationem obcaecati?</p>
+        <div id="Card" class="navlinkContent">
+            <div class="page-container">
+                <div class="card-container">
+                    <h1>Card</h1>
+                    <p>In order to meet the needs of various screen sizes, the card design can help users focus on specific content very conveniently.</p>
+                    <h3>Card with badge and dismiss button</h3>
+                    <div class="card-flex-container">
+                        <div class="card-badge" data-label="New">
+                            <div class="card">
+                                <div class="card-head">
+                                    <div class="card-image" style="background-image: url(https://lumiere-a.akamaihd.net/v1/images/freesolo-trailer-mobile-1440x1080_8bf4adf7.jpeg);"></div>
+                                    <div class="card-details">
+                                        <h2 class="card-title">Cards with badges</h2>
+                                        <h3 class="card-subtitle">by spacUi</h3>
+                                    </div>
+                                    <div class="card-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, delectus.</div>
+                                </div>
+                                <div class="card-actions">
+                                    <div class="card-action-buttons">
+                                        <button class="btn text-button"> Read</button>
+                                        <button class="btn text-button">Bookmark</button>
+                                    </div>
+                                    <div class="card-action-icons">
+                                        <button class="btn icon-button" title="Add to favorites"><i class="fas fa-heart"></i></button>
+                                        <button class="btn icon-button" title="Share" ><i class="fab fa-react"></i></button>
+                                        <button class="btn icon-button" title="More options" ><i class="fas fa-circle-notch"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div id="close-card" class="card">
+                            <div class="card-head">
+                                <div class="card-image card-overlay-image" style="background-image: url(https://lumiere-a.akamaihd.net/v1/images/freesolo-trailer-mobile-1440x1080_8bf4adf7.jpeg);">
+                                    <div class="card-details card-overlay-details">
+                                        <span class="card-closebtn" onclick="document.getElementById('close-card').style.display='none';">&times;</span>
+                                    </div>
+                                </div>
+                                <div class="card-details">
+                                    <h2 class="card-title">Cards with dismiss</h2>
+                                    <h3 class="card-subtitle">by spacUi</h3>
+                                </div>
+                                <div class="card-paragraph">Visit ten places on our planet that are undergoing the biggest changes today.</div>
+                            </div>
+                            <div class="card-actions">
+                                <div class="card-action-buttons">
+                                    <button class="btn text-button"> Read</button>
+                                    <button class="btn text-button">Bookmark</button>
+                                </div>
+                                <div class="card-action-icons">
+                                    <button class="btn icon-button" title="Add to favorites"><i class="fas fa-heart"></i></button>
+                                    <button class="btn icon-button" title="Share" ><i class="fab fa-react"></i></button>
+                                    <button class="btn icon-button" title="More options" ><i class="fas fa-circle-notch"></i></button>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <p>In card component you can add badge/ribbon to your card with desired text. Also you can have a dismiss button to remove the card from web page.</p>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=css&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-badge%2522%2520data-label%253D%2522New%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-head%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%2520style%253D%2522background-image%253A%2520url%28%29%253B%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-title%2522%253ECards%2520with%2520badges%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-subtitle%2522%253Eby%2520spacUi%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-paragraph%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Quos%252C%2520delectus.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522text-button%2522%253E%2520Read%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522text-button%2522%253EBookmark%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522icon-button%2522%2520title%253D%2522Add%2520to%2520favorites%2522%253E%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522icon-button%2522%2520title%253D%2522Share%2522%2520%253E%253Ci%2520class%253D%2522fab%2520fa-react%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522icon-button%2522%2520title%253D%2522More%2520options%2522%2520%253E%253Ci%2520class%253D%2522fas%2520fa-circle-notch%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        style="border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=css&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520id%253D%2522close-card%2522%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-head%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2520card-overlay-image%2522%2520style%253D%2522background-image%253A%2520url%28%29%253B%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2520card-overlay-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-closebtn%2522%2520onclick%253D%2522document.getElementById%28%27close-card%27%29.style.display%253D%27none%27%253B%2522%253E%2526times%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-title%2522%253ECards%2520with%2520dismiss%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-subtitle%2522%253Eby%2520spacUi%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-paragraph%2522%253EVisit%2520ten%2520places%2520on%2520our%2520planet%2520that%2520are%2520undergoing.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522text-button%2522%253E%2520Read%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522text-button%2522%253EBookmark%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522icon-button%2522%2520title%253D%2522Add%2520to%2520favorites%2522%253E%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522icon-button%2522%2520title%253D%2522Share%2522%2520%253E%253Ci%2520class%253D%2522fab%2520fa-react%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522icon-button%2522%2520title%253D%2522More%2520options%2522%2520%253E%253Ci%2520class%253D%2522fas%2520fa-circle-notch%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%2520%2520"
+                        style="border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                    <h3>Card with text over media style and shadow</h3>
+                    <div class="card-flex-container">
+                        <div class="card">
+                            <div class="card-head">
+                                <div class="card-image" style="background-image: url(https://lumiere-a.akamaihd.net/v1/images/freesolo-trailer-mobile-1440x1080_8bf4adf7.jpeg);"></div>
+                                <div class="card-details">
+                                    <h2 class="card-title">Cards with shadow</h2>
+                                    <h3 class="card-subtitle">by spacUi</h3>
+                                </div>
+                                <div class="card-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, delectus.</div>
+                            </div>
+                            <div class="card-actions">
+                                <div class="card-action-buttons">
+                                    <button class="btn text-button"> Read</button>
+                                    <button class="btn text-button">Bookmark</button>
+                                </div>
+                                <div class="card-action-icons">
+                                    <button class="btn icon-button" title="Add to favorites"><i class="fas fa-heart"></i></button>
+                                    <button class="btn icon-button" title="Share" ><i class="fab fa-react"></i></button>
+                                    <button class="btn icon-button" title="More options" ><i class="fas fa-circle-notch"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-head">
+                                <div class="card-image card-overlay-image" style="background-image: url(https://lumiere-a.akamaihd.net/v1/images/freesolo-trailer-mobile-1440x1080_8bf4adf7.jpeg);">
+                                    <div class="card-details card-overlay-details">
+                                        <h2 class="btn card-title">Cards with text overlay</h2>
+                                        <h3 class="btn card-subtitle">by spacUi</h3>
+                                    </div>
+                                </div>
+                                <div class="card-paragraph">Visit ten places on our planet that are undergoing the biggest changes today.</div>
+                            </div>
+                            <div class="card-actions">
+                                <div class="card-action-buttons">
+                                    <button class="btn text-button"> Read</button>
+                                    <button class="btn text-button">Bookmark</button>
+                                </div>
+                                <div class="card-action-icons">
+                                    <button class="btn icon-button" title="Add to favorites"><i class="fas fa-heart"></i></button>
+                                    <button class="btn icon-button" title="Share" ><i class="fab fa-react"></i></button>
+                                    <button class="btn icon-button" title="More options" ><i class="fas fa-circle-notch"></i></button>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <p>Shadow is added to the card so that it will be convinient to see. Also you can overlay the text over the image.</p>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=css&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-head%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%2520style%253D%2522background-image%253A%2520url%28%29%253B%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-title%2522%253ECards%2520with%2520shadow%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-subtitle%2522%253Eby%2520spacUi%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-paragraph%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522text-button%2522%253E%2520Read%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522text-button%2522%253EBookmark%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522icon-button%2522%2520title%253D%2522Add%2520to%2520favorites%2522%253E%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522icon-button%2522%2520title%253D%2522Share%2522%2520%253E%253Ci%2520class%253D%2522fab%2520fa-react%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522icon-button%2522%2520title%253D%2522More%2520options%2522%2520%253E%253Ci%2520class%253D%2522fas%2520fa-circle-notch%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        style="border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=css&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-head%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2520card-overlay-image%2522%2520style%253D%2522background-image%253A%2520url%28%29%253B%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2520card-overlay-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-title%2522%253ECards%2520with%2520text%2520overlay%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-subtitle%2522%253Eby%2520spacUi%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-paragraph%2522%253EVisit%2520ten%2520places%2520on%2520our%2520planet%2520that%2520are%2520undergoing.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522text-button%2522%253E%2520Read%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522text-button%2522%253EBookmark%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522icon-button%2522%2520title%253D%2522Add%2520to%2520favorites%2522%253E%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522icon-button%2522%2520title%253D%2522Share%2522%2520%253E%253Ci%2520class%253D%2522fab%2520fa-react%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522icon-button%2522%2520title%253D%2522More%2520options%2522%2520%253E%253Ci%2520class%253D%2522fas%2520fa-circle-notch%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        style="border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                    <h3>Card with horozontal alignment and only text</h3>
+                    <div class="card-flex-container">
+                        <div class="card card-hrz">
+                            <div class="card-head">
+                                <div class="card-image" style="background-image: url(https://lumiere-a.akamaihd.net/v1/images/freesolo-trailer-mobile-1440x1080_8bf4adf7.jpeg);"></div>
+                                <div>
+                                    <div class="card-details">
+                                        <h2 class="card-title">Horizontal cards</h2>
+                                        <h3 class="card-subtitle">by spacUi</h3>
+                                    </div>
+                                    <div class="card-paragraph">Lorem ipsum dolor sit amet.</div>
+                                </div>
+                            </div>
+                            <div class="card-actions">
+                              <div class="card-action-buttons">
+                                <button class="btn text-button"> Read</button>
+                                <button class="btn text-button">Bookmark</button>
+                              </div>
+                              <div class="card-action-icons">
+                                <button class="btn icon-button" title="Add to favorites"><i class="fas fa-heart"></i></button>
+                                <button class="btn icon-button" title="Share" ><i class="fab fa-react"></i></button>
+                                <button class="btn icon-button" title="More options" ><i class="fas fa-circle-notch"></i></button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-head">
+                                <div class="card-details">
+                                    <h2 class="card-title">Text only cards</h2>
+                                    <h3 class="card-subtitle">by spacUi</h3>
+                                </div>
+                                <div class="card-paragraph">Visit ten places on our planet that are undergoing the biggest changes today.</div>
+                            </div>
+                            <div class="card-actions">
+                                <div class="card-action-buttons">
+                                    <button class="btn text-button"> Read</button>
+                                    <button class="btn text-button">Bookmark</button>
+                                </div>
+                                <div class="card-action-icons">
+                                    <button class="btn icon-button" title="Add to favorites"><i class="fas fa-heart"></i></button>
+                                    <button class="btn icon-button" title="Share" ><i class="fab fa-react"></i></button>
+                                    <button class="btn icon-button" title="More options" ><i class="fas fa-circle-notch"></i></button>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <p>In horizontal cards, the image is at the left side and text is at right side. You can also use text only card if images are not required.</p>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=css&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-hrz%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-head%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%2520style%253D%2522background-image%253A%2520url%28%29%253B%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-title%2522%253EHorizontal%2520cards%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-subtitle%2522%253Eby%2520spacUi%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-paragraph%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522text-button%2522%253E%2520Read%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522text-button%2522%253EBookmark%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522icon-button%2522%2520title%253D%2522Add%2520to%2520favorites%2522%253E%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522icon-button%2522%2520title%253D%2522Share%2522%2520%253E%253Ci%2520class%253D%2522fab%2520fa-react%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522icon-button%2522%2520title%253D%2522More%2520options%2522%2520%253E%253Ci%2520class%253D%2522fas%2520fa-circle-notch%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        style="border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=css&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-head%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-title%2522%253ECards%2520with%2520text%2520overlay%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-subtitle%2522%253Eby%2520spacUi%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-paragraph%2522%253EVisit%2520ten%2520places%2520on%2520our%2520planet%2520that%2520are%2520undergoing.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522text-button%2522%253E%2520Read%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522text-button%2522%253EBookmark%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522icon-button%2522%2520title%253D%2522Add%2520to%2520favorites%2522%253E%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522icon-button%2522%2520title%253D%2522Share%2522%2520%253E%253Ci%2520class%253D%2522fab%2520fa-react%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522icon-button%2522%2520title%253D%2522More%2520options%2522%2520%253E%253Ci%2520class%253D%2522fas%2520fa-circle-notch%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        style="border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
         </div>
     </div>    
 </body>
