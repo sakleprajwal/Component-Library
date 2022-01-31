@@ -1,0 +1,107 @@
+.button-container{
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 40rem; 
+}
+
+.button-container h1,h3{
+    margin-top: 2rem;
+}
+
+.button-container p{
+    margin: 1rem 0 1rem 0;
+}
+
+.button-flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-top: 1rem;
+}
+
+.btn{
+    border: none;
+}
+
+.btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.primary-btn{
+    padding: 1rem;
+    margin: 1rem;
+    color: var(--ternary-color);
+    font-family: var(--secondary-font);
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.link-btn{
+    padding: 1rem;
+    margin: 1rem;
+    font-family: var(--secondary-font);
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.link-btn a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--ternary-color);
+}
+
+.icon-button{
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.icon-button i{
+    display: block;
+    padding: 1rem;
+}
+
+.icon-button:hover {
+    background: transparent radial-gradient(circle, var(--secondary-color-opaque) 1%, var(--ternary-color-opaque) 1%) center/15000%;
+}
+
+.icon-button:active {
+    background-color: transparent;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+.fab-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem; 
+    border: none;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--ternary-color);
+    font-size: 1.2rem;
+    border-radius: 50%;
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.green-button{
+    background-color: rgb(22 163 74);
+}
+
+.red-button{
+    background-color: rgb(220 38 38);
+}
+
+.amber-button{
+    background-color: rgb(217 119 6);
+}
+
