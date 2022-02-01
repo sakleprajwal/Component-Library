@@ -2,7 +2,7 @@
 @import "./component\ styles/Badge.css";
 @import "./component\ styles/Alert.css";
 @import "./component\ styles/Card.css";
-
+@import "./component\ styles/Button.css";
 :root{
     /* Color variables */
     --primary-color: #5EEAD4;
@@ -35,41 +35,6 @@ h1, h2, h3, h4, h5, h6 {
 p{
   font-family: var(--secondary-font)
 }
-
-
-/* ********** Button Style*********** */
-.btn:focus{
-    outline: none;
-    box-shadow: none;
-}
-
-.icon-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    background-color: transparent;
-    font-size: 1.2rem;
-    border-radius: 50%;
-    background-position: center;
-    transition: background 0.8s;
-}
-
-.icon-button i{
-    display: block;
-    padding: 1rem;
-}
-
-.icon-button:hover {
-    background: transparent radial-gradient(circle, var(--secondary-color-opaque) 1%, var(--ternary-color-opaque) 1%) center/15000%;
-}
-
-.icon-button:active {
-    background-color: transparent;
-    background-size: 100%;
-    transition: background 0s;
-}
-
 
 /* ********* Header Style ********* */
 .header{
@@ -395,6 +360,10 @@ iframe{
     }
 
     .card-container{
+        width: 100%;
+    }
+
+    .button-container{
         width: 100%;
     }
 
