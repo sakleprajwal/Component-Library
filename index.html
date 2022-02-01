@@ -36,11 +36,13 @@
             <h4 class="drawer-subtitle">Build anything</h4>
         </div>
         <div class="drawer-items">
-            <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Avatar')"><i class="fas fa-id-card"></i><span>Avatar</span></label>
-            <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Badge')"><i class="fas fa-star"></i><span>Badge</span></label>
-            <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Alert')"><i class="fas fa-paper-plane"></i><span>Alert</span></label>
-            <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Card')"><i class="fas fa-envelope"></i><span>Card</span></label>
-            <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Button')"><i class="fas fa-envelope"></i><span>Button</span></label>
+            <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Avatar')"><i class="fas fa-user-tie"></i><span>Avatar</span></label>
+            <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Alert')"><i class="fas fa-bell"></i><span>Alert</span></label>
+            <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Badge')"><i class="fas fa-medal"></i><span>Badge</span></label>
+            <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Button')"><i class="fas fa-toggle-on"></i><span>Button</span></label>
+            <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Card')"><i class="fas fa-id-card"></i><span>Card</span></label>
+            <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Image')"><i class="far fa-images"></i><span>Image</span></label>
+            <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Input')"><i class="fas fa-keyboard"></i><span>Input</span></label>
         </div>
     </div>
     <div id="page-content">
@@ -396,6 +398,53 @@
                     <p>Button component has primary button, link button, icon button and floating action button in 3 colors i.e red, green, amber. Icon buttons has ripple effect on click. Floating action buttons is very useful in one page websites.</p>
                     <iframe
                         src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=css&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520primary-btn%2520green-button%2522%253EPrimary%2520buttton%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520primary-btn%2520red-button%2522%253EPrimary%2520buttton%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520primary-btn%2520amber-button%2522%253EPrimary%2520buttton%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520link-btn%2520green-button%2522%253E%253Ca%2520href%253D%2522%2522%253ELink%2520button%253C%252Fa%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520link-btn%2520red-button%2522%253E%253Ca%2520href%253D%2522%2522%253ELink%2520button%253C%252Fa%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520link-btn%2520amber-button%2522%253E%253Ca%2520href%253D%2522%2522%253ELink%2520button%253C%252Fa%253E%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520fab-button%2522%253E%253Ci%2520class%253D%2522fas%2520fa-home%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                        style="border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div id="Image" class="navlinkContent">
+            <div class="page-container">
+                <div class="image-container">
+                    <h1>Images</h1>
+                    <p>Images can help you to attract attention and to guide your visitor's line of sight. They can be of great value when it comes to presenting important information.</p>
+                    <h3>Responsive image</h3>
+                    <div>
+                        <img src="https://placeimg.com/500/500/sport" alt="" class="responsive-img">
+                    </div>
+                    <h3>Round and responsive image</h3>
+                    <div>
+                        <img src="https://placeimg.com/500/500/sport" alt="" class="responsive-img round-img">
+                    </div>
+                    <p>You can use image component to make your image responsive. It also has round styling for images.</p>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=css&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522%2522%2520alt%253D%2522%2522%2520class%253D%2522responsive-img%2522%253E%250A%250A%253Cimg%2520src%253D%2522%2522%2520alt%253D%2522%2522%2520class%253D%2522responsive-img%2520round-img%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                        style="border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div id="Input" class="navlinkContent">
+            <div class="page-container">
+                <div class="input-container">
+                    <h1>Input</h1>
+                    <p>The input fields are used to create interactive controls for web-based forms in order to accept data from the user.</p>
+                    <h3>Input with blank validation</h3>
+                    <div>
+                        <form  >  
+                            <input type="text" required class="input input-validation" placeholder="username" >
+                            <input type="submit" class="btn primary-btn green-button">
+                        </form>
+                    </div>
+                    <h3>Textarea input</h3>
+                    <div>
+                        <textarea class="input textarea-input input-validation" placeholder="some text..." required></textarea>
+                    </div>
+                    <p>Input component has standard input and text-area input options. Text-area input is used when input value is sentence or paragraph.</p>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=css&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cform%2520%253E%2520%2520%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520required%2520class%253D%2522input%2520input-validation%2522%2520placeholder%253D%2522username%2522%2520%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522submit%2522%2520class%253D%2522btn%2520primary-btn%2520green-button%2522%253E%250A%253C%252Fform%253E%250A%250A%253Cform%2520%253E%2520%2520%250A%2520%2520%2520%2520%253Ctextarea%2520class%253D%2522input%2520textarea-input%2520input-validation%2522%2520placeholder%253D%2522some%2520text...%2522%2520required%253E%253C%252Ftextarea%253E%250A%253C%252Fform%253E"
                         style="border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
