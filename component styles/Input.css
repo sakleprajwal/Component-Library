@@ -1,0 +1,47 @@
+.input-container{
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 40rem; 
+}
+
+.input-container h1,h3{
+    margin-top: 2rem;
+}
+
+.input-container p{
+    margin: 1rem 0 1rem 0;
+}
+
+.input{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border: none;
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    background: var(--ternary-color);
+    padding: 1rem;
+}
+
+.textarea-input{
+    height: 6rem;
+    width: 20rem;
+    display:block;
+    box-sizing: border-box;
+    resize: none;
+    overflow-y: hidden;
+}
+
+.input-validation:required:focus{
+    border: 1px solid rgb(220 38 38);
+}
+
+.input:hover {
+    border-radius: 12px;
+}
+  
+.input:focus{
+    outline:none;
+    border: 1px solid rgb(220 38 38);
+}

@@ -3,6 +3,9 @@
 @import "./component\ styles/Alert.css";
 @import "./component\ styles/Card.css";
 @import "./component\ styles/Button.css";
+@import "./component\ styles/Image.css";
+@import "./component\ styles/Input.css";
+
 :root{
     /* Color variables */
     --primary-color: #5EEAD4;
@@ -364,6 +367,14 @@ iframe{
     }
 
     .button-container{
+        width: 100%;
+    }
+
+    .image-container{
+        width: 100%;
+    }
+
+    .input-container{
         width: 100%;
     }
 
