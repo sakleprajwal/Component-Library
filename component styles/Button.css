@@ -35,7 +35,6 @@
     color: var(--ternary-color);
     font-family: var(--secondary-font);
     background-color: var(--secondary-color);
-    border-radius: 1rem;
     cursor: pointer;
 }
 
@@ -44,7 +43,6 @@
     margin: 1rem;
     font-family: var(--secondary-font);
     background-color: var(--secondary-color);
-    border-radius: 1rem;
     cursor: pointer;
 }
 
