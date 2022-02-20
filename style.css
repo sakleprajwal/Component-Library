@@ -5,6 +5,7 @@
 @import "./component\ styles/Button.css";
 @import "./component\ styles/Image.css";
 @import "./component\ styles/Input.css";
+@import "./component\ styles/Navigation.css";
 
 :root{
     /* Color variables */
