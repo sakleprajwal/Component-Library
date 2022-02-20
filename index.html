@@ -44,6 +44,7 @@
             <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Image')"><i class="far fa-images"></i><span>Image</span></label>
             <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Input')"><i class="fas fa-keyboard"></i><span>Input</span></label>
             <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Navigation')"><i class="fas fa-bars"></i><span>Navigation</span></label>
+            <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Text-utility')"><i class="fas fa-text"></i><span>Text utility</span></label>
         </div>
     </div>
     <div id="page-content">
@@ -535,7 +536,36 @@
                     </div>
                     <p>The navigation component has responsive design. That means you can use the same component in Desktop and mobile website.</p>
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=css&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522navbar-section%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navbar-brand%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522brand-link%2522%253E%253Cspan%253EspacUi%253C%252Fspan%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522search%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522search-input%2522%2520placeholder%253D%2522search%2520for%2520Product%252C%2520Brand%2520and%2520more%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522navbar-icon-btn%2520search-btn%2522%253E%253Ci%2520class%253D%2522fas%2520fa-search%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navbar-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522category-link%2522%253E%253Cbutton%2520class%253D%2522navbar-icon-btn%2522%253E%253Ci%2520class%253D%2522fas%2520fa-bell%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522category-link%2522%253E%253Cbutton%2520class%253D%2522navbar-icon-btn%2522%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522category-link%2522%253E%253Cbutton%2520class%253D%2522navbar-icon-btn%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=css&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522navbar-section%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navbar-brand%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522brand-link%2522%253E%253Cspan%253EspacUi%253C%252Fspan%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522search%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522search-input%2522%2520placeholder%253D%2522search%2520for%2520Product%252C%2520Brand%2520and%2520more%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522navbar-icon-btn%2520search-btn%2522%253E%253Ci%2520class%253D%2522fas%2520fa-search%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navbar-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522category-link%2522%253E%253Cbutton%2520class%253D%2522navbar-icon-btn%2522%253E%253Ci%2520class%253D%2522fas%2520fa-bell%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522category-link%2522%253E%253Cbutton%2520class%253D%2522navbar-icon-btn%2522%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522category-link%2522%253E%253Cbutton%2520class%253D%2522navbar-icon-btn%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        style="border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!--Text utility component -->
+        <div id="Text-utility" class="navlinkContent">
+            <div class="page-container">
+                <div class="text-utility-container">
+                    <h1>Text utility</h1>
+                    <p>Text utilities can be used additively to style a HTML page from scratch or to override a style defined in component CSS.</p>
+                    <h3>Standart text utilities</h3>
+                    <div class="text-utility-item">
+                        <h2 class="text-utility-text heading-text">Heading text</h2>
+                    </div>
+                    <div class="text-utility-item">
+                        <span class="text-utility-text sm-text">Small text</span>
+                    </div>
+                    <div class="text-utility-item">
+                        <span class="text-utility-text sm-text grey-text">Small grey text</span>
+                    </div>
+                    <div class="text-utility-item">
+                        <span class="text-utility-text center-text">Small center text</span>
+                    </div>
+                    <p>The text utility component has "heading-text" class which can be used to style header texts, small or large text class, grey text and "center-text" class for aligning the text at center.</p>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=css&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch2%2520class%253D%2522text-utility-text%2520heading-text%2522%253EHeading%2520text%253C%252Fh2%253E%250A%253Cspan%2520class%253D%2522text-utility-text%2520sm-text%2522%253ESmall%2520text%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522text-utility-text%2520sm-text%2520grey-text%2522%253ESmall%2520grey%2520text%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522text-utility-text%2520center-text%2522%253ESmall%2520center%2520text%253C%252Fspan%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
                         style="border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>

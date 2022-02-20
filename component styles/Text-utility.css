@@ -1,0 +1,43 @@
+.text-utility-container{
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 40rem; 
+}
+
+.text-utility-container h1,h3{
+    margin-top: 2rem;
+}
+
+.text-utility-container p{
+    margin: 1rem 0 1rem 0;
+}
+
+.text-utility-item{
+    margin: 1rem 0;
+    border: 1px solid var(--secondary-color);
+}
+
+.text-utility-text{
+    font-family: var(--primary-font);
+    margin: 0;
+}
+
+.heading-text{
+   font-size: 2rem;
+}
+
+.sm-text{
+    font-size: 1rem;
+}
+
+.lg-text{
+    font-size: 2rem;
+}
+
+.grey-text{
+    color: var(--secondary-color-shadow);
+}
+
+.center-text{
+    text-align: center;
+}
