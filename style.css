@@ -6,6 +6,7 @@
 @import "./component\ styles/Image.css";
 @import "./component\ styles/Input.css";
 @import "./component\ styles/Navigation.css";
+@import "./component\ styles/Text-utility.css";
 
 :root{
     /* Color variables */
