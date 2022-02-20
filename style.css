@@ -1,12 +1,13 @@
-@import "./component\ styles/Avatar.css";
-@import "./component\ styles/Badge.css";
-@import "./component\ styles/Alert.css";
-@import "./component\ styles/Card.css";
-@import "./component\ styles/Button.css";
-@import "./component\ styles/Image.css";
-@import "./component\ styles/Input.css";
-@import "./component\ styles/Navigation.css";
-@import "./component\ styles/Text-utility.css";
+@import url('./component\ styles/Avatar.css');
+@import url('./component\ styles/Badge.css');
+@import url('./component\ styles/Alert.css');
+@import url('./component\ styles/Card.css');
+@import url('./component\ styles/Button.css');
+@import url('./component\ styles/Image.css');
+@import url('./component\ styles/Input.css');
+@import url('./component\ styles/Navigation.css');
+@import url('./component\ styles/Text-utility.css');
+@import url('./component\ styles/Rating.css');
 
 :root{
     /* Color variables */

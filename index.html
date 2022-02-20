@@ -45,6 +45,7 @@
             <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Input')"><i class="fas fa-keyboard"></i><span>Input</span></label>
             <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Navigation')"><i class="fas fa-bars"></i><span>Navigation</span></label>
             <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Text-utility')"><i class="fas fa-text"></i><span>Text utility</span></label>
+            <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Rating')"><i class="fas fa-star"></i><span>Rating</span></label>
         </div>
     </div>
     <div id="page-content">
@@ -566,6 +567,34 @@
                     <p>The text utility component has "heading-text" class which can be used to style header texts, small or large text class, grey text and "center-text" class for aligning the text at center.</p>
                     <iframe
                         src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=css&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch2%2520class%253D%2522text-utility-text%2520heading-text%2522%253EHeading%2520text%253C%252Fh2%253E%250A%253Cspan%2520class%253D%2522text-utility-text%2520sm-text%2522%253ESmall%2520text%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522text-utility-text%2520sm-text%2520grey-text%2522%253ESmall%2520grey%2520text%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522text-utility-text%2520center-text%2522%253ESmall%2520center%2520text%253C%252Fspan%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                        style="border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!--Rating component -->
+        <div id="Rating" class="navlinkContent">
+            <div class="page-container">
+                <div class="rating-container">
+                    <h1>Rating</h1>
+                    <p>Reviews are key to the decision-making process, helping customers to get a better idea about the product, including quality, material, size, and shape.</p>
+                    <h3>Display Rating for E-commerce website</h3>
+                    <div class="display-rating-bar">
+                        <span>4.5</span><i class="fas fa-star"></i>
+                    </div>
+                    <h3>Rating input for E-commerce website</h3>
+                    <div class="input-rating">
+                        <i class="input-rating-icon fas fa-star filled-icon"></i>
+                        <i class="input-rating-icon fas fa-star filled-icon"></i>
+                        <i class="input-rating-icon fas fa-star filled-icon"></i>
+                        <i class="input-rating-icon fas fa-star filled-icon"></i>
+                        <i class="input-rating-icon fas fa-star filled-icon"></i>
+                    </div>
+                    <p>The rating component has "display-rating-bar" class which is used when rating needs to displayed and "input-rating" class is used when rating input is required.</p>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=css&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522display-rating-bar%2522%253E%250A%2520%2520%2520%2520%253Cspan%253E4.5%253C%252Fspan%253E%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%2520%250A%253Cdiv%2520class%253D%2522input-rating%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522input-rating-icon%2520fas%2520fa-star%2520filled-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522input-rating-icon%2520fas%2520fa-star%2520filled-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522input-rating-icon%2520fas%2520fa-star%2520filled-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522input-rating-icon%2520fas%2520fa-star%2520filled-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522input-rating-icon%2520fas%2520fa-star%2520filled-icon%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
                         style="border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
