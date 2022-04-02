@@ -18,7 +18,7 @@
     background-color: var(--ternary-color-shadow);
     gap: 1rem;
     padding: 1rem 1.5rem;
-    box-shadow: 1px 2px 25px 1px var(--lightest-gray);
+    box-shadow: 1px 2px 25px 1px var(--ternary-color-shadow);
 }
 
 .notification-pill:hover{
