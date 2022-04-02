@@ -1,0 +1,26 @@
+.list-wrap{
+    width: fit-content;
+    height: fit-content;
+    max-width: 15rem;
+    padding: 1rem;
+}
+
+.list-pills{
+    cursor: pointer;
+    font-family: var(--secondary-font);
+    margin-bottom: 0.5rem;
+    padding: 0.5rem ;
+    border-radius: 0.5rem;
+    list-style: none;
+}
+.notification-pill{
+    display: flex;
+    background-color: var(--ternary-color-shadow);
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    box-shadow: 1px 2px 25px 1px var(--ternary-color-shadow);
+}
+
+.notification-pill:hover{
+    background-color: var(--ternary-color-opaque);
+}

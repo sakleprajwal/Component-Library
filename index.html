@@ -43,7 +43,9 @@
             <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Card')"><i class="fas fa-id-card"></i><span>Card</span></label>
             <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Image')"><i class="far fa-images"></i><span>Image</span></label>
             <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Input')"><i class="fas fa-keyboard"></i><span>Input</span></label>
+            <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'List')"><i class="fas fa-list-ol"></i><span>List</span></label>
             <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Navigation')"><i class="fas fa-bars"></i><span>Navigation</span></label>
+            <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Modal')"><i class="fas fa-box"></i><span>Modal</span></label>
             <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Text-utility')"><i class="fas fa-text"></i><span>Text utility</span></label>
             <label for="drawer-toggle" class="btn drawer-button navlinks" onclick="openNavlink(event, 'Rating')"><i class="fas fa-star"></i><span>Rating</span></label>
         </div>
@@ -601,6 +603,89 @@
                 </div>
             </div>
         </div>
+
+
+        <!--List component -->
+        <div id="List" class="navlinkContent">
+            <div class="page-container">
+                <div class="rating-container">
+                    <h1>List</h1>
+                    <p>Lists make information on your Web page easy to parse. Lists are interesting to look at: Web pros are always telling people to use lots of white space to vary the appearance of their pages so they're not just featureless blobs of text</p>
+                    <h3>Spaced (normal lists)</h3>
+                    <div class="list-wrap">
+                        <ul>
+                            <li class="list-pills">list item 1</li>
+                            <li class="list-pills">list item 2</li>
+                            <li class="list-pills">list item 3</li>
+                            <li class="list-pills">list item 4</li>
+                            <li class="list-pills">list item 5</li>            
+                        </ul>
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=css&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522list-wrap%2522%253E%250A%2520%2520%2520%2520%253Cul%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-pills%2522%253Elist%2520item%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-pills%2522%253Elist%2520item%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-pills%2522%253Elist%2520item%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-pills%2522%253Elist%2520item%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-pills%2522%253Elist%2520item%25205%253C%252Fli%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                        style="border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                    <h3>Stacked (Notification Page)</h3>
+                    <div class="list-wrap">
+                        <ol>
+                            <li class="list-pills notification-pill">
+                                <i class="far fa-bell"></i> 
+                                <h5>Notification 1</h5>
+                            </li>
+                            <li class="list-pills notification-pill">
+                                <i class="far fa-bell"></i>
+                                <h5>Notification 2</h5>
+                            </li>
+                            <li class="list-pills notification-pill">
+                                <i class="far fa-bell"></i>
+                                <h5>Notification 3</h5>
+                            </li>
+                            <li class="list-pills notification-pill">
+                                <i class="far fa-bell"></i>
+                                <h5>Notification 4</h5>
+                            </li>
+                            <li class="list-pills notification-pill">
+                                <i class="far fa-bell"></i>
+                                <h5>Notification 5</h5>
+                            </li>   
+                        </ol>
+                    </div>
+                    <p>The list component provide 2 types of lists. i.e. spaced list and stacked List which are useful in ecommerce and video library websites.</p>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=css&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522list-wrap%2522%253E%250A%2520%2520%2520%2520%253Col%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-pills%2520notification-pill%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-bell%2522%253E%253C%252Fi%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253ENotification%25201%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-pills%2520notification-pill%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-bell%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253ENotification%25202%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-pills%2520notification-pill%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-bell%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253ENotification%25203%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-pills%2520notification-pill%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-bell%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253ENotification%25204%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-pills%2520notification-pill%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-bell%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253ENotification%25205%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%2520%2520%2520%250A%2520%2520%2520%2520%253C%252Fol%253E%250A%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                        style="border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        
+        <!--Modal component -->
+        <div id="Modal" class="navlinkContent">
+            <div class="page-container">
+                <div class="rating-container">
+                    <h1>Modal</h1>
+                    <p>A modal (also called a modal window or lightbox) is a web page element that displays in front of and deactivates all other page content. To return to the main content, the user must engage with the modal by completing an action or by closing it.</p>
+                    <h3>Simple Modal</h3>
+                    <button id="myBtn" class="btn primary-btn green-button">Modal buttton</button>
+                    <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Some text in the Modal..</p>
+                    </div>
+
+                    </div>
+                    <p>The Modal component provide an utility to use Modal directly into your eCommerce or any website.</p>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=css&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520id%253D%2522myBtn%2522%2520class%253D%2522btn%2520primary-btn%2520green-button%2522%253EModal%2520buttton%253C%252Fbutton%253E%250A%253Cdiv%2520id%253D%2522myModal%2522%2520class%253D%2522modal%2522%253Es%250A%253Cdiv%2520class%253D%2522modal-content%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522close%2522%253E%2526times%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cp%253ESome%2520text%2520in%2520the%2520Modal..%253C%252Fp%253E%250A%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                        style="border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+        </div>
     </div>    
 </body>
 </html>
+
