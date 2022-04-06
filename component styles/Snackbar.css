@@ -1,0 +1,39 @@
+.snack-container{
+    background-color: var(--secondary-color-opaque);
+    box-shadow: 1px 2px 25px 1px var(--ternary-color-shadow);
+    color: var(--secondary-color);
+    align-items: center;
+    gap: 1rem;
+    position:fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 30rem;
+    padding: 1rem;
+}
+
+.snack-container p{
+    margin: 0;
+}
+
+.snack-left{
+    left: 0;
+    transform: translateX(0);
+}
+
+.snack-icon-wrap{
+    align-items: center;
+    gap: 1rem;
+}
+
+.snack-icon{
+    cursor: pointer;
+}
+
+.snack-link{
+    color: var(--secondary-color-shadow);
+}
+
+.hide-snack{
+    display: flex;
+}

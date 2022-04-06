@@ -1,0 +1,22 @@
+.grid-container-2X2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: var(--secondary-color-shadow);
+    padding: 0.5rem;
+}
+
+.grid-container-3X3 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: var(--secondary-color-shadow);
+    padding: 0.5rem;
+}
+
+.grid-item {
+    background-color: var(--ternary-color-opaque);
+    border: 1px solid var(--secondary-color-opaque);
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--ternary-color);
+    text-align: center;
+}
