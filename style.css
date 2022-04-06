@@ -320,12 +320,21 @@ p{
 iframe{
     width: 100%;
     height: max-content;
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 0;
 }
 
 iframe::-webkit-scrollbar{
     display: none;
 }
+
+/* utilities */
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+
     
 /* ******* Breakpoint for Responsive Style ******* */ 
 @media all and (max-width: 560px) { 
